@@ -1,4 +1,4 @@
-from .display import display
+from .display import displayNumbers
 from .buttons import buttons
 
-__all__ = ["display", "buttons"]
+__all__ = ["displayNumbers", "buttons"]
