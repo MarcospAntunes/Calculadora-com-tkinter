@@ -1,10 +1,9 @@
 from tkinter import *
 from ..components import displayNumbers
 
-def adicionaValores(window: Tk, button: Button):
-    text = button.cget("text")
+def adicionaValores(window: Tk, text: str):
     try:
         number = int(text)
         displayNumbers.displayNumbers(window, number)
-    except:
+    except ValueError:
         print(text)
